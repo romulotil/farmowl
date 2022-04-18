@@ -1,0 +1,12 @@
+<p>
+  <mat-toolbar color="primary">
+    <span class="title-link" routerLink="/player">{{ player ? player.name : 'Player' }}</span>
+    <span class="menu-spacer"></span>
+    <button mat-icon-button aria-label="Menu icon" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/farm">Home</button>
+    </mat-menu>
+  </mat-toolbar>
+</p>
